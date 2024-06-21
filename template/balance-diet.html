@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance-Diet Page</title>
+    <link rel="stylesheet" href="balance-diet.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <h2>User Profile</h2>
+            </div>
+            <nav class="nav">
+                <h3>Challenges</h3>
+                <ul>
+                    <li><a href="#">Work-Out</a></li>
+                    <li><a href="#">Balance-Diet</a></li>
+                </ul>
+                <h3>Rewards</h3>
+                <ul>
+                    <li><a href="#">Gift-Card</a></li>
+                </ul>
+            </nav>
+            <button class="logout-btn">Log-Out</button>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Balance-Diet</h1>
+                <div class="points">
+                    Points: <span id="points">0</span>
+                </div>
+            </header>
+            <section class="tasks">
+                <div class="task">
+                    <label>
+                        <input type="checkbox" class="task-checkbox" data-points="10">
+                        Drink plenty of fluids
+                        <span class="task-points">10 points</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox" class="task-checkbox" data-points="20">
+                        Eat less saturated fat, sugar and salt
+                        <span class="task-points">20 points</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox" class="task-checkbox" data-points="15">
+                        Eat at least 5 portions of a variety of fruit and vegetables every day
+                        <span class="task-points">15 points</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox" class="task-checkbox" data-points="25">
+                        Have some dairy or dairy alternatives (such as soya drinks)
+                        <span class="task-points">25 points</span>
+                    </label>
+                </div>
+                <div class="task">
+                    <label>
+                        <input type="checkbox" class="task-checkbox" data-points="30">
+                        Choose unsaturated oils and spreads, and eat them in small amounts
+                        <span class="task-points">30 points</span>
+                    </label>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="balance-diet.js"></script>
+</body>
+</html>
