@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function() {
             <input type="password" id="password" name="password" required>
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age</label>
+            <input type="number" min="1" id="age" name="age" required >
+            <label for="weight">Weight</label>
+            <input type="number" min="1" id="weight" name="weight" required >
+            <label for="height">Height</label>
+            <input type="number" min="1" id="height" name="height" required >
             <button type="submit" class="btn">Sign up</button>
         `;
         popup.style.display = "flex";
