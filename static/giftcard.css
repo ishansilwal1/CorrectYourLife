@@ -89,7 +89,7 @@ header h1 {
     margin-top: 20px;
 }
 
-.giftcard {
+/* .giftcard {
     background-color: #000;
     color: #fff;
     width: 150px;
@@ -97,11 +97,13 @@ header h1 {
     text-align: center;
     cursor: pointer;
     position: relative;
-}
+} */
 
-.giftcard .giftcard-image {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.giftcard img {
+    width: 360px;
+    height: 205px;
+    background-size: cover;
+    
 }
 
 .giftcard .giftcard-points {
@@ -111,10 +113,7 @@ header h1 {
     font-size: 1em;
 }
 
-.coin-icon {
-    width: 20px;
-    margin-left: 5px;
-}
+
 
 .popup {
     display: none;
