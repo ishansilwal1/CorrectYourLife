@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="prof.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>User Profile</h2>
+        <nav>
+            <ul>
+                <li><strong>Challenges</strong></li>
+                <li><a href="#">Work-Out</a></li>
+                <li><a href="#">Balance-Diet</a></li>
+                <li><strong>Rewards</strong></li>
+                <li><a href="#">Gift-Card</a></li>
+            </ul>
+        </nav>
+        <button class="logout-button" onclick="logout()">Log-Out</button>
+    </div>
+
+    <div class="content">
+        <h1>Profile</h1>
+        <div class="profile-container">
+            <div class="profile-item">
+                <label for="userName" class="label">Name:</label>
+                <span class="value" id="userName"></span>
+            </div>
+            <div class="profile-item">
+                <label for="userEmail" class="label">Email:</label>
+                <span class="value" id="userEmail"></span>
+            </div>
+            <div class="profile-item">
+                <label for="userAge" class="label">Age:</label>
+                <span class="value" id="userAge"></span>
+            </div>  
+            <div class="profile-item">
+                <label for="userHeight" class="label">Height:</label>
+                <span class="value" id="userHeight"></span>
+            </div>
+            <div class="profile-item">
+                <label for="userWeight" class="label">Weight:</label>
+                <span class="value" id="userWeight"></span>
+            </div>
+            <div class="profile-item">
+                <button class="calculate-btn" onclick="calculateBMI()">Calculate BMI</button>
+                <span class="value" id="bmiResult"></span>
+            </div>
+            <div class="profile-item">
+                <label for="calorieIntake" class="label">Recommended Calorie Intake:</label>
+                <span class="value" id="calorieIntake"></span>
+            </div>
+        </div>
+    </div>
+    <div id="popup-message" style="display: none;">
+        <p id="popup-text"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <script src="prof.js"></script>
+</body>
+</html>
