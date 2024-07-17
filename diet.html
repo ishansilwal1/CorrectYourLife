@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Items</title>
+    <link rel="stylesheet" href="diet.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <h2>User Profile</h2>
+            </div>
+            <nav class="nav">
+                <h3>Challenges</h3>
+                <ul>
+                    <li><a href="#">Work-Out</a></li>
+                    <li><a href="#">Balance-Diet</a></li>
+                </ul>
+                <h3>Rewards</h3>
+                <ul>
+                    <li><a href="#">Gift-Card</a></li>
+                </ul>
+            </nav>
+            <button class="logout-btn">Log-Out</button>
+        </aside>
+        
+        <div class="main-content">
+            <h1>Food Items</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Quantity</th>
+                        <th>Calories</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="food-table-body">
+                    <!-- Food items will be rendered here -->
+                </tbody>
+            </table>
+            <p id="total-calories">Total Calories: 0</p>
+            <button id="add-more">Add More</button>
+        </div>
+    </div>
+    <script src="diet.js"></script>
+</body>
+</html>
