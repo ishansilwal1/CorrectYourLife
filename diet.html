@@ -34,14 +34,26 @@
                         <th>Food Name</th>
                         <th>Quantity</th>
                         <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Fats</th>
+                        <th>Carbs</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody id="food-table-body">
                     <!-- Food items will be rendered here -->
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="text-align: right;"><strong>Total:</strong></td>
+                        <td id="total-calories">0</td>
+                        <td id="total-protein">0g</td>
+                        <td id="total-fats">0g</td>
+                        <td id="total-carbs">0g</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
-            <p id="total-calories">Total Calories: 0</p>
             <button id="add-more">Add More</button>
         </div>
     </div>
